@@ -10,11 +10,25 @@ For Mac users make sure the following has been installed:
     brew cask install adoptopenjdk8
     npm install -g react-native-cli
     
+For Windows users:
+
+    choco install -y nodejs.install python2 jdk8
+    npm install -g react-native-cli
+    Install Android Studio
+    Install the Android SDK
+    Configure the ANDROID_HOME environment variable
+    Add platform-tools to Path
+    
 ## Development
-To run the project:
+Mac: to run the project:
 
     cd AwesomeProject
     react-native run-ios
+    
+Windows: 
+    
+    cd AwesomeProject
+    react-native run-android
 
 ## License
 ```
