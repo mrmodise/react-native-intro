@@ -13,6 +13,7 @@ import Greeting from "./Greeting";
 import Bananas from "./Bananas";
 import BlinkApp from "./Blink";
 import LotsOfStyles from "./LotsOfStyles";
+import FixedDimensionsBasics from "./FixedDimensionsBasics";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -34,6 +35,7 @@ export default class App extends Component<Props> {
                 <Greeting name={'Salibonani'}/>
                 <BlinkApp/>
                 <LotsOfStyles/>
+                <FixedDimensionsBasics/>
             </View>
         );
     }
