@@ -35,7 +35,6 @@ export default class App extends Component<Props> {
                 <Greeting name={'Salibonani'}/>
                 <BlinkApp/>
                 <LotsOfStyles/>
-                <FixedDimensionsBasics/>
             </View>
         );
     }
