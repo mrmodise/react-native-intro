@@ -1,5 +1,5 @@
 # React Native Basics
-This is repo contains the basics of React Native.
+This repo contains the basics of React Native.
 
 ## Prerequisites
 For Mac users make sure the following has been installed:
