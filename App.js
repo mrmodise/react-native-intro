@@ -11,6 +11,8 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
 import HelloWorldApp from "./HelloWorldApp";
 import Greeting from "./Greeting";
 import Bananas from "./Bananas";
+import BlinkApp from "./Blink";
+import LotsOfStyles from "./LotsOfStyles";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -30,6 +32,8 @@ export default class App extends Component<Props> {
                 <Bananas/>
                 <HelloWorldApp/>
                 <Greeting name={'Salibonani'}/>
+                <BlinkApp/>
+                <LotsOfStyles/>
             </View>
         );
     }
