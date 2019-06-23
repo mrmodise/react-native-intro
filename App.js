@@ -7,13 +7,14 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, ScrollView, StyleSheet, Text, View} from 'react-native';
 import HelloWorldApp from "./HelloWorldApp";
 import Greeting from "./Greeting";
 import Bananas from "./Bananas";
 import BlinkApp from "./Blink";
 import LotsOfStyles from "./LotsOfStyles";
-import FixedDimensionsBasics from "./FixedDimensionsBasics";
+import PizzaTranslator from "./PizzaTranslator";
+import ButtonBasics from "./ButtonBasics";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -26,16 +27,20 @@ type Props = {};
 export default class App extends Component<Props> {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>Welcome to React Native Dev!</Text>
-                <Text style={styles.instructions}>To get started, edit App.js</Text>
-                <Text style={styles.instructions}>{instructions}</Text>
-                <Bananas/>
-                <HelloWorldApp/>
-                <Greeting name={'Salibonani'}/>
-                <BlinkApp/>
-                <LotsOfStyles/>
-            </View>
+            <ScrollView>
+                <View style={styles.container}>
+                    <Text style={styles.welcome}>Welcome to React Native Dev!</Text>
+                    <Text style={styles.instructions}>To get started, edit App.js</Text>
+                    <Text style={styles.instructions}>{instructions}</Text>
+                    <Bananas/>
+                    <HelloWorldApp/>
+                    <Greeting name={'Salibonani'}/>
+                    <BlinkApp/>
+                    <LotsOfStyles/>
+                    <PizzaTranslator/>
+                    <ButtonBasics/>
+                </View>
+            </ScrollView>
         );
     }
 }
